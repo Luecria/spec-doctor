@@ -15,7 +15,6 @@ Built for [Kiroween 2026](https://kiroween.devpost.com/) (Frankenstein category)
 - Duplicate and near-duplicate requirements (Jaccard similarity over normalized tokens, threshold 0.90)
 - Oversized or multi-concern tasks, and tasks whose acceptance criteria are missing
 - Design sections missing error handling, a data model, or API contracts (contracts required only when an interface surface is described)
-- Missing steering documents
 
 **Health score (0–100)** — starts at 100, subtracts per finding with diminishing deductions (Critical 15, High 8, Medium 3, Low 1, each repeat ×0.6 floored, minimum 1). The report shows the full deduction breakdown, so the score is reproducible by hand.
 
@@ -67,14 +66,21 @@ spec-doctor/
 │   └── types.ts         # Shared types
 ├── tests/               # Vitest suites (281 tests, incl. engine->export e2e)
 ├── fixtures/            # bad-spec + good-spec sample specs
+├── public/
+│   └── .gitkeep
 ├── .kiro/
 │   ├── specs/spec-doctor/   # The spec this tool was built from
 │   ├── steering/            # Product, tech, and structure notes
 │   └── hooks/               # Typecheck-on-save hook
+├── .github/
+│   └── workflows/deploy.yml   # GitHub Pages deploy workflow
 ├── index.html
 ├── vite.config.ts
 ├── tsconfig.json
-└── package.json
+├── package.json
+├── package-lock.json
+├── .gitignore
+└── LICENSE
 ```
 
 ## How Kiro was used
