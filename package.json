@@ -1,0 +1,21 @@
+{
+  "name": "spec-doctor",
+  "version": "0.1.0",
+  "description": "Client-side specification auditor for Kiro spec files",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "jszip": "^3.10.2"
+  },
+  "devDependencies": {
+    "@vitest/ui": "^1.0.4",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.7",
+    "vitest": "^1.0.4"
+  }
+}

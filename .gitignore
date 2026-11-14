@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+# Local stage reports and operator notes (not part of the product)
+REPORT-*.txt
+SPEC-REVIEW.txt
+IMPLEMENTATION_SUMMARY.md
+DRIFT_DETECTION_SUMMARY.md
+KIRO-FORMAT-NOTES.md
